@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="360.0" style="-fx-border-color: #00ffbf; -fx-border-width: 4px; -fx-background-color: ivory;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerOrder">
+   <children>
+      <JFXTextField fx:id="usernameField" focusColor="BLACK" labelFloat="true" layoutX="111.0" layoutY="143.0" prefHeight="30.0" prefWidth="180.0" promptText="Username">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="passwordField" focusColor="BLACK" labelFloat="true" layoutX="111.0" layoutY="197.0" prefHeight="30.0" prefWidth="180.0" promptText="Password">
+         <font>
+            <Font name="HoloLens MDL2 Assets" size="13.0" />
+         </font>
+      </JFXPasswordField>
+      <AnchorPane layoutX="68.0" layoutY="143.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-image: url('file:E:/IntelliJ/JavaFXApplication/src/Images/usercolor.png'); -fx-background-size: 100% 100%;" />
+      <AnchorPane layoutX="68.0" layoutY="197.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-image: url('file:E:/IntelliJ/JavaFXApplication/src/Images/lockcolor.png'); -fx-background-size: 100% 100%;" />
+      <Text layoutX="26.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm your details to place the order">
+         <font>
+            <Font name="Tahoma" size="18.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="134.0" layoutY="373.0" onMouseClicked="#placeOrder" prefHeight="35.0" prefWidth="90.0" ripplerFill="WHITE" style="-fx-font-family: Tahoma; -fx-font-weight: bold; -fx-background-radius: 20px; -fx-background-color: #00ffbf;" text="Place Order">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <AnchorPane layoutX="4.0" layoutY="4.0" prefHeight="40.0" prefWidth="352.0" style="-fx-background-color: #00ffbf;">
+         <children>
+            <JFXHamburger layoutX="4.0" layoutY="8.0" onMouseClicked="#switchProfile">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXHamburger>
+            <AnchorPane layoutX="86.0" layoutY="-2.0" onMouseClicked="#switchDashboard" prefHeight="40.0" prefWidth="180.0" style="-fx-background-image: url('file:E:/IntelliJ/JavaFXApplication/src/Images/dashboardlogo.png'); -fx-background-size: 100% 100%;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></AnchorPane>
+         </children>
+      </AnchorPane>
+      <JFXTextArea fx:id="addressArea" focusColor="BLACK" labelFloat="true" layoutX="111.0" layoutY="254.0" prefHeight="100.0" prefWidth="180.0" promptText="Delivery Address ">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </JFXTextArea>
+      <AnchorPane layoutX="68.0" layoutY="254.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-image: url('file:E:/IntelliJ/JavaFXApplication/src/Images/home.png'); -fx-background-size: 100% 100%;" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="360.0" style="-fx-border-color: #00ffbf; -fx-border-width: 4px,4px,4px,4px;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerMultipleProduct">
+   <children>
+      <AnchorPane layoutX="4.0" layoutY="4.0" prefHeight="40.0" prefWidth="352.0" style="-fx-background-color: #00ffbf;">
+         <children>
+            <JFXHamburger layoutX="4.0" layoutY="8.0" onMouseClicked="#switchProfile">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXHamburger>
+            <AnchorPane layoutX="86.0" layoutY="-2.0" onMouseClicked="#switchDashboard" prefHeight="40.0" prefWidth="180.0" style="-fx-background-image: url('file:E:/IntelliJ/JavaFXApplication/src/Images/dashboardlogo.png'); -fx-background-size: 100% 100%;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="4.0" layoutY="44.0" prefHeight="552.0" prefWidth="352.0">
+         <children>
+            <AnchorPane layoutX="4.0" layoutY="4.0" prefHeight="168.0" prefWidth="168.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 0.5px;">
+               <children>
+                  <ImageView fitHeight="140.0" fitWidth="140.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ProductImages/Tomato.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="13.0" layoutY="145.0" text="Tomato(1kg) - 50Rs">
+                     <font>
+                        <Font name="Tahoma Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="180.0" layoutY="4.0" prefHeight="168.0" prefWidth="168.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 0.5px;">
+               <children>
+                  <Label layoutX="17.0" layoutY="145.0" text="Potato(1kg) - 30Rs">
+                     <font>
+                        <Font name="Tahoma Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="113.0" fitWidth="140.0" layoutX="14.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ProductImages/Potato.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="prod1" buttonType="RAISED" layoutX="43.0" layoutY="178.0" onMouseClicked="#switchOrder" prefHeight="30.0" prefWidth="90.0" style="-fx-font-family: Tahoma; -fx-font-weight: bold; -fx-background-radius: 20px; -fx-background-color: #00ffbf;" text="Order">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton fx:id="prod2" buttonType="RAISED" layoutX="219.0" layoutY="178.0" onMouseClicked="#switchOrder" prefHeight="30.0" prefWidth="90.0" style="-fx-font-family: Tahoma; -fx-font-weight: bold; -fx-background-radius: 20px; -fx-background-color: #00ffbf;" text="Order">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

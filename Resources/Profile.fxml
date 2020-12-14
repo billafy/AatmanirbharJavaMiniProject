@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="360.0" style="-fx-border-width: 4px; -fx-border-color: #00ffbf; -fx-background-color: ivory;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerProfile">
+   <children>
+      <AnchorPane layoutX="105.0" layoutY="78.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 360; -fx-border-radius: 360; -fx-background-image: url('file:E:/IntelliJ/JavaFXApplication/src/Images/avatar.png'); -fx-background-size: 100% 100%; -fx-background-repeat: no-repeat;" />
+      <JFXButton buttonType="RAISED" layoutX="30.0" layoutY="376.0" onAction="#logOut" prefWidth="300.0" ripplerFill="#00ffbf" style="-fx-border-radius: 20px; -fx-background-color: lightgreen; -fx-background-radius: 20px;" text="Log Out">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="30.0" layoutY="416.0" onAction="#closeApp" prefWidth="300.0" ripplerFill="#00ffbf" style="-fx-border-radius: 20px; -fx-background-color: lightgreen; -fx-background-radius: 20px;" text="Close Application">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <AnchorPane layoutX="4.0" layoutY="4.0" prefHeight="40.0" prefWidth="352.0" style="-fx-background-color: #00ffbf;">
+         <children>
+            <AnchorPane layoutX="86.0" layoutY="-2.0" onMouseClicked="#switchDashboard" prefHeight="40.0" prefWidth="180.0" style="-fx-background-image: url('file:E:/IntelliJ/JavaFXApplication/src/Images/dashboardlogo.png'); -fx-background-size: 100% 100%;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane layoutX="322.0" layoutY="4.0" onMouseClicked="#switchDashboard" prefHeight="30.0" prefWidth="30.0" style="-fx-background-image: url('file:E:/IntelliJ/JavaFXApplication/src/Images/back.png'); -fx-background-size: 100% 100%;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="createAccount" buttonType="RAISED" layoutX="120.0" layoutY="319.0" onMouseClicked="#switchCreateAccount" prefHeight="35.0" prefWidth="120.0" ripplerFill="WHITE" style="-fx-font-family: Tahoma; -fx-font-weight: bold; -fx-background-radius: 20px; -fx-background-color: #00ffbf; visibility: true;" text="Create Account">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="login" buttonType="RAISED" layoutX="135.0" layoutY="240.0" onMouseClicked="#switchLogin" prefHeight="35.0" prefWidth="90.0" ripplerFill="WHITE" style="-fx-font-family: Tahoma; -fx-font-weight: bold; -fx-background-radius: 20px; -fx-background-color: #00ffbf; visibility: true;" text="Login">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <Label fx:id="newUser" layoutX="150.0" layoutY="295.0" prefHeight="20.0" prefWidth="60.0" style="visibility: true;" text="New User?">
+         <effect>
+            <Glow level="0.6" />
+         </effect>
+      </Label>
+      <Label fx:id="usernameLabel" layoutX="80.0" layoutY="210.0" prefHeight="30.0" prefWidth="200.0">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

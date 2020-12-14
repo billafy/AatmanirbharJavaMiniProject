@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="360.0" style="-fx-border-width: 4px; -fx-border-color: #00ffbf; -fx-background-color: ivory;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerCreateAccount">
+   <children>
+      <Text layoutX="118.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Account">
+         <font>
+            <Font name="Tahoma" size="18.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="usernameField" focusColor="BLACK" labelFloat="true" layoutX="112.0" layoutY="248.0" prefHeight="30.0" prefWidth="180.0" promptText="Username">
+         <font>
+            <Font name="HoloLens MDL2 Assets" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="emailIdorPhoneField" focusColor="BLACK" labelFloat="true" layoutX="112.0" layoutY="305.0" prefHeight="30.0" prefWidth="180.0" promptText="Email or Phone Number">
+         <font>
+            <Font name="HoloLens MDL2 Assets" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="passwordField" focusColor="BLACK" labelFloat="true" layoutX="112.0" layoutY="362.0" prefHeight="30.0" prefWidth="180.0" promptText="Password">
+         <font>
+            <Font name="HoloLens MDL2 Assets" size="13.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton buttonType="RAISED" layoutX="135.0" layoutY="428.0" onMouseClicked="#signUp" prefHeight="35.0" prefWidth="90.0" style="-fx-background-color: rgb(27,240,192); -fx-background-radius: 20px; -fx-font-family: Tahoma; -fx-font-weight: bold;" text="Create">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#00ffbf" />
+                  <Stop color="#fcfcfc" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font name="HoloLens MDL2 Assets" size="14.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="92.5" layoutY="27.5" prefHeight="160.0" prefWidth="175.0" style="-fx-background-image: url('file:E:/IntelliJ/JavaFXApplication/src/Images/aatmanirbhar2.png'); -fx-background-size: 100% 100%;" />
+      <Hyperlink layoutX="91.0" layoutY="563.0" onMouseClicked="#switchLogin" text="Already have an account? Login" />
+      <AnchorPane layoutX="68.0" layoutY="362.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-image: url('file:E:/IntelliJ/JavaFXApplication/src/Images/lockcolor.png'); -fx-background-size: 100% 100%;" />
+      <AnchorPane layoutX="68.0" layoutY="248.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-image: url('file:E:/IntelliJ/JavaFXApplication/src/Images/usercolor.png'); -fx-background-size: 100% 100%;" />
+      <AnchorPane layoutX="68.0" layoutY="305.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-image: url('file:E:/IntelliJ/JavaFXApplication/src/Images/emailcolor.png'); -fx-background-size: 100% 100%; -fx-background-repeat: no-repeat;" />
+   </children>
+</AnchorPane>
